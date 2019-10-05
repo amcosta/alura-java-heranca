@@ -23,7 +23,7 @@ public class GerenteTest {
         Assert.assertEquals("", 2000, gerente.getSalario(), 0.00001);
 
         gerente.setSenha(123);
-        Assert.assertTrue(gerente.autentica(123));
+        Assert.assertTrue(gerente.autenticar(123));
     }
 
     @Test
