@@ -29,6 +29,6 @@ public class GerenteTest {
     @Test
     public void testVerificarBonificacao() {
         Gerente gerente = this.construirGerente("Gerente 1", "12312312312", 2000);
-        Assert.assertEquals("", 2200, gerente.getBonificacao(), 0.00001);
+        Assert.assertEquals("", 2000, gerente.getBonificacao(), 0.00001);
     }
 }
