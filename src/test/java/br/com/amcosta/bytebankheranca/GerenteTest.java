@@ -25,4 +25,10 @@ public class GerenteTest {
         gerente.setSenha(123);
         Assert.assertTrue(gerente.autentica(123));
     }
+
+    @Test
+    public void testVerificarBonificacao() {
+        Gerente gerente = this.construirGerente("Gerente 1", "12312312312", 2000);
+        Assert.assertEquals("", 2200, gerente.getBonificacao(), 0.00001);
+    }
 }
